@@ -14,12 +14,12 @@ dev_ids = [discord_id]
 logs = log_channel_id
 
 max_urls = [
-    "http://example.com/model/predict"
+    "http://max:5000/model/predict"
 ]
 
 dbcreds = {
-    "host":"localhost",
-    "port":3131,
+    "host":"db",
+    "port":3306,
     "user":"root",
     "password":"password",
     "db":"toxbot"
