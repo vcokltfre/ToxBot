@@ -47,6 +47,12 @@ class Bot(commands.Bot):
     async def on_ready(self):
         await self.db.init()
 
+    async def get_prefix(self, message):
+        if not message.guild: return "!"
+        gconf = self.config.load(f"./guilds/{message.guild.id}.yml")
+        if not gconf: return "!"
+        return gconf.get("prefix", "!")
+
 
 def run(cogs: list, debug=False, prefix=None, help_command=None):
     if prefix is None:
