@@ -26,7 +26,7 @@ dbcreds = {
 }
 ```
 
-Example guild in `./guilds/`:
+Example guild in `./guilds/{guildid}.yml`:
 ```yml
 prefix: "!"
 alerts: 781890407994359849
