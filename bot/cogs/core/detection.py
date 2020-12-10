@@ -12,9 +12,9 @@ Action taken: **{action}**
 {bucket}
 
 **Snippet:**
-||```
+```
 {snippet}
-```||
+```
 """
 
 
